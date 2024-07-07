@@ -38,7 +38,7 @@ function initialSetup() {
   addBookForm.onsubmit = (e) => {
     e.preventDefault();
     const data = {};
-  
+
     // Create form data object and
     // add key-value pairs to data
     const formData = new FormData(e.currentTarget);
