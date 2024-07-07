@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Library</h1>
+        <button class="modal-btn">+ Add Book</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Library table -->
+      <table class="library">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th># Of Pages</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Form dialog -->
+      <dialog>
+        <form class="book-form">
+          <h2>Add a Book</h2>
+          <label for="title">Book Title:</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title..."
+            required
+          />
+          <label for="author">Book Author:</label>
+          <input
+            type="text"
+            name="author"
+            title="author"
+            placeholder="Author..."
+            required
+          />
+          <label for="pages"># Of Pages:</label>
+          <input
+            type="number"
+            name="pages"
+            id="pages"
+            min="1"
+            placeholder="Number of pages..."
+            required
+          />
+          <div class="status-input">
+            <input type="checkbox" name="status" id="status" />
+            <label for="status"> Have you read this book? </label>
+          </div>
+          <div class="dialog-btns">
+            <button type="submit" class="submit-btn">+ Add</button>
+            <button type="button" class="close-btn">Close</button>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
